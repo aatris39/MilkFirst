@@ -1,4 +1,5 @@
 import pygame
+import time
 pygame.init()
 x = 680
 y = 235
@@ -10,7 +11,8 @@ img = pygame.transform.scale(img, (100,100))
 img2 = pygame.image.load('assets/characters/CH2.png')
 img3 = pygame.image.load('assets/characters/CH3.png')
 img4 = pygame.image.load('assets/characters/CH4.png')
-#img5 = pygame.image.load('assets/characters/MCright.png')
+img5 = pygame.image.load('assets/startscreen.png')
+
 
 font = pygame.font.SysFont("arial", 40)
 text = font.render("Pour the milk first b**ch", True, (0, 0, 0))
@@ -22,14 +24,14 @@ while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
-    win.fill((255, 255, 255))
-    win.blit(img, (x, y))
-    win.blit(img2, (50, 120))
-    win.blit(img3, (50, 260))
-    win.blit(img4, (50, 400))
+    #win.fill((255, 255, 255))
+    #win.blit(img, (x, y))
+    #win.blit(img2, (50, 120))
+    #win.blit(img3, (50, 260))
+    #win.blit(img4, (50, 400))
     
-    win.blit(text, (190, 0))
-    win.blit(text2, (290, 40))
+    #win.blit(text, (190, 0))
+    #win.blit(text2, (290, 40))
 
 
     keys=pygame.key.get_pressed()
