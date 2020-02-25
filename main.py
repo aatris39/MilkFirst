@@ -14,6 +14,40 @@ img4 = pygame.image.load('assets/characters/CH4.png')
 img5 = pygame.image.load('assets/startscreen.png')
 
 
+
+def makeCH():
+    e = { 
+        "x": x,
+        "y": y,
+        "img": win.blit(img, (50, 120)),
+
+            }
+
+def makeCH2():
+    e = { 
+        "x": 50,
+        "y": 120,
+        "img": win.blit(img2, (50, 120)),
+
+            }
+
+def makeCH3():
+    e = { 
+        "x": 50,
+        "y": 260,
+        "img": win.blit(img3, (50, 260)),
+
+            }
+
+def makeCH4():
+    e = { 
+        "x": 50,
+        "y": 400,
+        "img": win.blit(img4, (50, 400)),
+
+            }
+
+
 font = pygame.font.SysFont("arial", 40)
 text = font.render("Pour the milk first b**ch", True, (0, 0, 0))
 font = pygame.font.SysFont("arial", 20)
@@ -24,16 +58,16 @@ while run:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
-    #win.fill((255, 255, 255))
-    #win.blit(img, (x, y))
-    #win.blit(img2, (50, 120))
-    #win.blit(img3, (50, 260))
-    #win.blit(img4, (50, 400))
+    win.fill((255, 255, 255))
+
     
     #win.blit(text, (190, 0))
     #win.blit(text2, (290, 40))
-
-
+    makeCH()
+    makeCH2()
+    makeCH3()
+    makeCH4()
+    
     keys=pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
         x -= 0.3

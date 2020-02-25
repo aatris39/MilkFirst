@@ -1,8 +1,12 @@
-def multiply(x):
-  return x * 2
+def getName():
+  print("What is your name?")
+  n = "Bob" # make this input() later
+  return n
 
-ans = multiply(2)
-print(ans)
+def printGreeting(nm):
+  global name
+  print("Hello, " + nm + ".  My name is " + name + ". How are you?")
 
-ans = multiply(10)
-print(ans)
+name = "Alexa"
+user = getName()
+printGreeting(user)
