@@ -1,12 +1,12 @@
-def getName():
-  print("What is your name?")
-  n = "Bob" # make this input() later
-  return n
+player = {
+  "x": 500
+}
+x = 200
 
-def printGreeting(nm):
-  global name
-  print("Hello, " + nm + ".  My name is " + name + ". How are you?")
+if player["x"] < x:
+  x = 300
+else:
+  player["x"] += 1
 
-name = "Alexa"
-user = getName()
-printGreeting(user)
+print(x)
+print(player["x"])
