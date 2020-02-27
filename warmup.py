@@ -1,12 +1,5 @@
-player = {
-  "x": 500
-}
-x = 200
+list = [1, 54, 7, 3, 6]
 
-if player["x"] < x:
-  x = 300
-else:
-  player["x"] += 1
-
-print(x)
-print(player["x"])
+print(list[3])
+list[4] = list[0] + 3
+print(list[4])
